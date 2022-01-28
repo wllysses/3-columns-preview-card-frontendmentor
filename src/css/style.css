@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root {
+    --fonte-lexend: 'Lexend Deca', sans-serif;
+    --fonte-big: 'Big Shoulders Display', cursive;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    color: white;
+}
+
+.container {
+    max-width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card {
+    padding: 3rem;
+}
+
+.container .content .titulo {
+    font-family: var(--fonte-big);
+    font-size: 2.5rem;
+    margin: 25px 0;
+}
+
+.container .content .texto {
+    font-family: var(--fonte-lexend);
+    margin: 0 0 60px 0;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.container .sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+
+.container .suvs {
+    background-color:hsl(184, 100%, 22%);
+}
+
+.container .luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+
+.container .btn {
+  font-family: var(--fonte-lexend);
+  background-color: lightgray;
+  border-radius: 100px;
+  padding: 12px 45px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.container .btn:hover {
+    background-color: rgb(146, 145, 145);
+    color: white;
+}
+
+.rodape .creditos p {
+    color: black;
+    text-align: center;
+    font-family: var(--fonte-lexend);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.rodape {
+    margin-bottom: 5px;
+}
+
+.rodape .creditos p a {
+    color: black;
+    font-weight: 700;
+}
+
+.rodape .creditos p a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 70%;
+        flex-direction: column;
+    }
+
+    .container .card {
+        padding: 2rem;
+    }
+
+    .container .sedans {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .container .luxury {
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+@media (max-width: 425px) {
+    .container {
+        max-width: 80%;
+    }
+}
