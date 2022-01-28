@@ -116,4 +116,8 @@ body {
     .container {
         max-width: 80%;
     }
+
+    .rodape .creditos p {
+        font-size: 12px;
+    }
 }
